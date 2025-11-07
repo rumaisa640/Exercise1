@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - RAYYAN COLLECTIONS</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- font cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+   .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+   }
+   .contact h1 {
+      margin-bottom: 10px;
+      color: #d4af37;
+      
+    }
+   .contact p {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: white;
+    }
+  .contact  img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin:20px;
+      display: none;
+      border: 1px solid white;
+      margin-left: 25px;
+    }
+   .contact button {
+      padding: 12px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #25D366;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+   .contact button:hover {
+      background-color: #1ebe5d;
+    }
+   
+.contact-section {
+  background-color: #d4d4d4;
+  color: #6c1b1b;
+  padding: 40px 20px;
+  
+  border-radius: 10px;
+}
+
+.contact-section h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000000;
+ font-weight: 300;
+}
+
+.contact-section p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+ 
+}
+
+
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+.main-section-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px;
+}
+.contact-section strong{
+  color: #000000;
+  padding-right: 10px;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+  background-color: black;
+  padding: 6px 14px;
+  border-radius:70px
+}
+
+/* Brand Colors */
+.social-icons a .fa-instagram {
+  color: #E1306C; /* Instagram pink/purple gradient main color */
+}
+
+.social-icons a .fa-facebook-f {
+  color: #1877F2; /* Facebook blue */
+}
+
+.social-icons a .fa-whatsapp {
+  color: #25D366; /* WhatsApp green */
+}
+
+/* Hover effect: slightly enlarge icon */
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+/* Large screens: side by side */
+
+/* Base styles (already in your CSS, just keep them) */
+
+/* --------- Responsive CSS --------- */
+
+/* Tablets / Medium devices ~912px */
+@media (max-width: 912px) {
+  .main-section-contact {
+    flex-direction: column;
+    margin: 30px 10px;
+  }
+
+  .contact {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .contact img {
+    width: 250px;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .contact button {
+    width: 80%;
+    font-size: 15px;
+  }
+
+  .contact-section {
+    padding: 30px 15px;
+  }
+
+  .contact-section h1 {
+    font-size: 24px;
+  }
+
+  .social-icons a {
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 0 8px;
+  }
+}
+
+
+
+
+
+
+/* Medium and small screens: stacked column */
+@media (max-width: 768px) {
+  .main-section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 30px;
+  }
+
+  .contact img {
+    max-width: 250px;
+    margin-left: 45px;
+    
+  }
+
+  .contact button {
+    width: 50%;
+    font-size: 10px;
+  }
+
+  .contact-section {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+
+/* Very small screens: extra adjustments */
+@media (max-width: 480px) {
+  .contact img {
+    max-width: 200px;
+  }
+.contact button {
+    width: 50%;
+    font-size: 10px;
+  }
+
+  .contact h1,
+  .contact-section h1 {
+    font-size: 20px;
+  }
+
+  .contact p,
+  .contact-section p {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+}
+
+  </style>
+  <script>
+  const ownerNumber = '923218922817'; // Your WhatsApp number
+
+  window.onload = function() {
+    // Get parameters from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get('product') || 'Nosepin';
+    const productId = urlParams.get('id') || 'RC101';
+    const image = urlParams.get('image') || '';
+
+    // Set product details
+    document.getElementById('productName').textContent = product;
+    document.getElementById('productId').textContent = productId;
+
+    // Show image if available
+    if (image) {
+      const imgElement = document.getElementById('productImage');
+      imgElement.src = image;
+      imgElement.style.display = 'block';
+    }
+
+    // Prepare WhatsApp message
+    let message = `Hello! I am interested in this product:\n`;
+    message += `Product: ${product}\n`;
+    message += `ID: ${productId}\n`;
+    if (image) {
+      message += `Image: ${image}`;
+    }
+
+    // WhatsApp link
+    const whatsappLink = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(message)}`;
+    document.getElementById('whatsappLink').href = whatsappLink;
+  }
+</script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+        <img src="assets/LOGO.png" alt="Logo">
+    </div>
+    <div class="bottom-row">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- banner -->
+    <div class="banner">
+        <h1>Contact</h1>
+        <div class="breadcrumb">
+            <span id="breadcrumb">Home > Contact</span>
+        </div>
+    </div>
+    <!-- end banner -->
+
+  <!-- section -->
+   <main class="main-section-contact">
+      <section class="contact">
+          <div class="contact-container">
+            <h1>RAYYAN COLLECTIONS</h1>
+            <p>You're interested in: <strong id="productName"></strong></p>
+            <p>Product ID: <strong id="productId"></strong></p>
+            <img id="productImage" alt="Product Image">
+
+            <a id="whatsappLink" target="_blank">
+              <button>Contact on WhatsApp</button>
+            </a>
+        </div>
+      </section>
+
+      <section>
+      <div class="contact-section">
+        <h1>Contact Us</h1>
+        <p><strong>Phone:</strong> +92 321 8922817</p>
+        <p><strong>WhatsApp:</strong> +92 313 8308812</p>
+        <p><strong>Email:</strong> rayyancollection7878@gmail.com</p>
+
+        <div class="social-icons">
+          <h1>social accounts:</h1>
+          <a href="https://www.instagram.com/rayy_ancollections/?utm_source=qr&igsh=YWYyZWhnN3IwajA5#" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/people/Rehan-Collections/61578957980270/?rdid=zTzpL1cAnj5qB2Y7&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16ytwMRwy7%2F" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=923218922817&text=Hello%21+I+am+interested+in+this+product%3A%0AProduct%3A+Nosepin%0AID%3A+RC101%0A&type=phone_number&app_absent=0" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      </section>
+</main>
+
+
+
+   <!-- footer -->
+  <footer>
+        <section class="footer-container">
+        <div class="footer-icons">
+             <a href="https://www.instagram.com/rayy_ancollections/?utm_source=qr&igsh=YWYyZWhnN3IwajA5#"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/people/Rehan-Collections/61578957980270/?rdid=zTzpL1cAnj5qB2Y7&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16ytwMRwy7%2F"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=923218922817&text=Hello%21+I+am+interested+in+this+product%3A%0AProduct%3A+Nosepin%0AID%3A+RC101%0A&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-logo">
+          <img src="assets/LOGO.png" alt="">
+        </div>
+        <div class="footer-arrow-top">
+          <a href="#"><i class="bi bi-arrow-up"></i></a>
+        </div>
+        </section>
+        <div class="footer-copyright"><p>© 2025 RAYYAN COLLECTIONS. All rights reserved.</p></div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

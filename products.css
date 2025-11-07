@@ -1,0 +1,385 @@
+
+
+.products h1 {
+  text-align: center;
+  margin: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.products a{
+  text-decoration: none;
+  
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+.product-name{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.product-price{
+  padding-bottom: 2px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  max-width: 100%;
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+/* 🔥 Image Hover Effect */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-container .hover-img {
+  opacity: 0;
+  z-index: 1;
+}
+
+.image-container:hover .hover-img {
+  opacity: 1;
+}
+
+.image-container:hover .main-img {
+  opacity: 0;
+}
+
+/* 🔡 Text info */
+.product-name {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.product-price {
+  color: green;
+}
+/* Media Queries for Responsiveness */
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  .image-container {
+    height: 180px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 767px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* one column */
+    padding: 10px;
+    gap: 15px;
+    margin-left: 20px;
+  }
+
+  .product-card {
+    padding: 15px;
+    width: 100%; /* full width of grid cell */
+    max-width: 400px; /* optional, to avoid too wide on big phones */
+  }
+
+  .image-container {
+    height: 180px;
+  }
+
+  .product-name {
+    font-size: 14px;
+  }
+
+  .product-price {
+    font-size: 13px;
+  }
+
+  .product-stock {
+    font-size: 12px;
+  }
+
+  .product-grid img {
+    width: 100%; /* fill container */
+  }
+}
+
+/* product detials */
+.detail-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  color:rgb(224, 224, 224);
+  padding: 50px;
+}
+
+
+
+.detail-wrapper img {
+  width: 350px;
+  border-radius: 8px;
+  border: 1px solid white;
+
+}
+
+.detail-wrapper div {
+  max-width: 500px;
+}
+
+.detail-wrapper h1 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #d4af37;
+}
+.detail-wrapper h2{
+  font-size: 32px;
+  padding: 20px 0px;
+  color: rgb(7, 178, 7);
+
+}
+.detail-wrapper h6{
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  color: rgb(163, 163, 163);
+}
+.detail-wrapper button{
+  background-color: #d4af37;
+  color: black;
+  padding: 10px 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.detail-wrapper button:hover{
+  background-color: black;
+  border: 1px solid #d4af37;
+  color: white;
+}
+.detail-wrapper p{
+  padding: 7px 0px;
+    color:rgb(224, 224, 224);
+
+}
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+  }
+  .detail-wrapper h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .detail-wrapper h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .detail-wrapper div {
+    max-width: 100%;
+  }
+  .detail-wrapper button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+/* Devices up to 767px (mobiles + small tablets) */
+@media (max-width: 767px) {
+  .detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .detail-wrapper img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* optional for large mobile screens */
+  }
+
+  .detail-wrapper div {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .detail-wrapper h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .detail-wrapper h2 {
+    font-size: 26px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .detail-wrapper h6 {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .detail-wrapper p {
+    font-size: 14px;
+  }
+
+  /* Buttons in one line */
+  .detail-wrapper button {
+    display: inline-block;
+    width: 48%;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 15px;
+    box-sizing: border-box;
+  }
+
+  .detail-wrapper button:first-of-type {
+    margin-right: 4%;
+  }
+}
+/* Small devices (mobiles) */
+@media (max-width: 576px) {
+  .detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .detail-wrapper img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .detail-wrapper div {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .detail-wrapper h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .detail-wrapper h2 {
+    font-size: 24px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .detail-wrapper h6 {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .detail-wrapper p {
+    font-size: 14px;
+  }
+
+  /* Buttons in one line */
+  .detail-wrapper button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 48%; /* 2 buttons side by side */
+    box-sizing: border-box;
+  }
+
+  .detail-wrapper button:first-of-type {
+    margin-right: 4%;
+  }
+}
+/* Extra-small screens (phones) */
+@media (max-width: 400px) {
+  .detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .detail-wrapper img {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .detail-wrapper div {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .detail-wrapper h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .detail-wrapper h2 {
+    font-size: 22px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .detail-wrapper h6 {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .detail-wrapper p {
+    font-size: 13px;
+  }
+
+  /* Buttons in one line */
+  .detail-wrapper button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 48%; /* 2 buttons side by side */
+    box-sizing: border-box;
+  }
+
+  .detail-wrapper button:first-of-type {
+    margin-right: 4%;
+  }
+}
